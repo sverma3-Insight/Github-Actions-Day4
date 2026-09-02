@@ -5,7 +5,7 @@ const app = express();
 app.get("/run", (req, res) => {
     const userInput = req.query.data;
 
-    eval(userInput);
+    console.log(userInput);
 
     res.send("Executed");
 });
